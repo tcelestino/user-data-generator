@@ -5,17 +5,18 @@ const faker = require('faker/locale/pt_BR');
 const ExportToCsv = require('export-to-csv').ExportToCsv;
 
 const file = Path.join(__dirname, 'data.csv');
+const args = process.argv.slice(2);
 
 const generatorData = () => {
-  const numberRequests = 600000;
+  const numRows = args[0] || 600000;
   let userData = [];
 
-  for (let index = 0; index < numberRequests; index++) {
+  for (let index = 0; index < numRows; index++) {
     const firstName = faker.name.firstName();
     const lastName = faker.name.lastName();
 
     const name = `${firstName} ${lastName}`;
-    const email = faker.internet.email(firstName, lastName);
+    const email = faker.internet.email(firstName, lastName).toLocaleLowerCase();
 
     userData.push({ name, email });
   }
@@ -33,7 +34,7 @@ const exportCSV = (list) => {
     filename: 'email',
     useTextFile: false,
     useBom: true,
-    useKeysAsHeaders: false,
+    useKeysAsHeaders: true,
   };
 
   try {
