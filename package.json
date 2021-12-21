@@ -1,0 +1,16 @@
+{
+  "name": "subscribe-data",
+  "version": "1.0.0",
+  "description": "generator name and email",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "export-to-csv": "^0.2.1",
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.15"
+  }
+}
