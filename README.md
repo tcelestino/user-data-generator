@@ -5,13 +5,13 @@ Generator user data using Faker.js and export to .csv file
 ## Installation
 
 ```bash
-> yarn
+yarn
 ```
 
 ## Usage
 
 ```bash
-> yarn start
+yarn start
 ```
 
 ## Contributing
@@ -22,13 +22,13 @@ Generator user data using Faker.js and export to .csv file
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-TODO: @tcelestino
+@tcelestino
+
+## Contributors
+
+* [@aurelioluiz](https://github.com/aurelioluiz)
 
 ## License
 
