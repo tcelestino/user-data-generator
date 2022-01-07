@@ -1,6 +1,12 @@
-# Generator User Data
+# User Data Generator
 
-Generator user data using Faker.js and export to .csv file
+Create .csv file with user data information using Faker.js
+
+## Dependencies
+
+- [Faker.js](https://github.com/Marak/Faker.js#readme)
+- [Export CV](https://github.com/alexcaza/export-to-csv#readme)
+- [nodemon](https://nodemon.io/)
 
 ## Installation
 
